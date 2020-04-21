@@ -315,7 +315,7 @@
 						</div>
 					</div>
 					<div class="btn_wrapp_2">
-						<a href="#" class="blue_pill">Заказать консультацию</a>
+						<a href="#" class="blue_pill" data-popup-link = "popup_1">Заказать консультацию</a>
 					</div>
 				</div>
 			</section>
@@ -365,7 +365,7 @@
 						</div>
 					</div>
 					<div class="btn_wrapp_2">
-						<a href="#" class="blue_pill">Оставить заявку</a>
+						<a href="#" class="blue_pill" data-popup-link = "popup_1">Оставить заявку</a>
 					</div>
 				</div>
 			</section>
@@ -524,7 +524,7 @@
 							</div>
 						</div>
 						<div class="resp_center">
-							<a href="#" class="transparent_pill">Узнать подробности</a>
+							<a href="#" class="transparent_pill" data-popup-link = "popup_1">Узнать подробности</a>
 						</div>
 					</div>
 					<img class="right_image" src="img/02.png" alt="" />
@@ -906,16 +906,16 @@
 								<div class="btns_row">
 									<div></div>
 									<div>
-										<a href="#" class="transparent_pill_2">Подключить</a>
+										<a href="#" class="transparent_pill_2" data-popup-link = "popup_1">Подключить</a>
 									</div>
 									<div>
-										<a href="#" class="transparent_pill_2">Подключить</a>
+										<a href="#" class="transparent_pill_2" data-popup-link = "popup_1">Подключить</a>
 									</div>
 									<div>
-										<a href="#" class="transparent_pill_2">Подключить</a>
+										<a href="#" class="transparent_pill_2" data-popup-link = "popup_1">Подключить</a>
 									</div>
 									<div>
-										<a href="#" class="transparent_pill_2">Подключить</a>
+										<a href="#" class="transparent_pill_2" data-popup-link = "popup_1">Подключить</a>
 									</div>
 								</div>
 							</div>
@@ -955,7 +955,6 @@
 	<!-- /Content -->
 
 	<!-- Footer -->
-
 		<footer class="footer_section">
 			<div class="row">
 				<div class="footer_top_row animate fadeIn">
@@ -1040,46 +1039,41 @@
 				</div>
 			</div>
 		</footer>
-
 	<!-- /Footer -->
 
 	<!-- Popups -->
-
-	<div class="popup popup_sect" data-popup = "popup_1">		
-		<!-- <div class="row"> -->
-
-			<div class="popup_content">
-				<button type="button" class="close_popup"></button>
-				<div class="h2_wrapp">
-					<h2>Закажите <span class="orange">бесплатную</span> демонстрацию прямо сейчас </h2>
-					<p>Напишите контактный номер телефона. Наш консультант свяжется с вами, подробно расскажет о возможностях сервиса и ответит на ваши вопросы.</p>
+	<div class="popup popup_sect" data-popup = "popup_1">
+		<div class="popup_content">
+			<button type="button" class="close_popup"></button>
+			<div class="h2_wrapp">
+				<h2>Закажите <span class="orange">бесплатную</span> демонстрацию прямо сейчас </h2>
+				<p>Напишите контактный номер телефона. Наш консультант свяжется с вами, подробно расскажет о возможностях сервиса и ответит на ваши вопросы.</p>
+			</div>
+			<div class="popup_form_wrapp">
+				<div class="input_wrapp">
+					<input type="text" placeholder="Ваше имя" name="name" />
 				</div>
-				<div class="popup_form_wrapp">
-					<div class="input_wrapp">
-						<input type="text" placeholder="Ваше имя" name="name" />
+				<div class="input_wrapp">
+					<input type="tel" placeholder="Ваш телефон" name="tel" />
+				</div>
+				<div class="input_wrapp_2">
+					<div>
+						<p>Когда вам удобно позвонить</p>
 					</div>
-					<div class="input_wrapp">
-						<input type="tel" placeholder="Ваш телефон" name="tel" />
-					</div>
-					<div class="input_wrapp_2">
-						<div>
-							<p>Когда вам удобно позвонить</p>
-						</div>
-						<div>
-							<select>
-								<option>В любое удобное время</option>
-								<option>с 9 до 12</option>
-								<option>с 12 до 15</option>
-								<option>с 15 до 18</option>
-							</select>
-						</div>						
-					</div>
-					<div class="submit_wrapp">
-						<button type="submit" class="blue_pill">Отправить</button>
-					</div>
+					<div>
+						<select>
+							<option>В любое удобное время</option>
+							<option>с 9 до 12</option>
+							<option>с 12 до 15</option>
+							<option>с 15 до 18</option>
+						</select>
+					</div>						
+				</div>
+				<div class="submit_wrapp">
+					<button type="submit" class="blue_pill">Отправить</button>
 				</div>
 			</div>
-		<!-- </div> -->
+		</div>
 	</div>
 	<!-- /Popups -->
 
