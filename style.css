@@ -103,6 +103,7 @@ body {
     -ms-flex-direction: column;
     min-height: 100%;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 header {
@@ -1000,6 +1001,7 @@ textarea:focus {
 
 .sect_3 {
     padding: 74px 0;
+    overflow: hidden;
 }
 
 .thumbnails_2 {
@@ -1108,6 +1110,7 @@ textarea:focus {
 
 .sect_4 {
     padding: 61px 0 73px 0;
+    overflow: hidden;
 }
 
 .steps_thumbs {
@@ -1136,7 +1139,7 @@ textarea:focus {
     background-repeat: no-repeat;
     position: absolute;
     top: 73px;
-    right: -54px;
+    right: -21%;
 }
 
 .step_thumb:last-child:after {
@@ -1195,6 +1198,10 @@ textarea:focus {
 /*-- /Section 4 --*/
 
 /*-- Section 5 --*/
+
+.sect_5 {
+    overflow: hidden;
+}
 
 .articles_thumbs {
     display: flex;
