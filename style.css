@@ -123,10 +123,10 @@ footer {
     -webkit-flex: 0 0 auto;
 }
 
-::-webkit-input-placeholder {color:#555555;}
-::-moz-placeholder          {color:#555555;}
-:-moz-placeholder           {color:#555555;}
-:-ms-input-placeholder      {color:#555555;}
+::-webkit-input-placeholder {color: #757c85;}
+::-moz-placeholder          {color: #757c85;}
+:-moz-placeholder           {color: #757c85;}
+:-ms-input-placeholder      {color: #757c85;}
 
 input,
 textarea,
@@ -374,16 +374,6 @@ textarea:focus {
     font-size: 14px;
     line-height: 16px;
     color: #2f3236;
-}
-
-.main_nav_wrapp {
-/*    display: inline-block;
-    vertical-align: top;*/
-/*    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    margin: 0 5px;*/
 }
 
 .main_nav {
@@ -842,6 +832,7 @@ textarea:focus {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+    cursor: pointer;
     background-color: rgb(63, 69, 87);
     padding: 18px 40px 17px 40px;
     font-family: "Source Sans Pro";
@@ -1074,6 +1065,8 @@ textarea:focus {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
+    border: none;
+    cursor: pointer;
     background-color: #3399cc;
     padding: 18px 40px 17px 40px;
     font-family: "Source Sans Pro";
@@ -1376,6 +1369,7 @@ textarea:focus {
     display: inline-block;
     vertical-align: top;
     min-width: 285px;
+    cursor: pointer;
     text-align: center;
     text-transform: uppercase;
     -webkit-border-radius: 3px;
@@ -1747,6 +1741,7 @@ textarea:focus {
     -moz-border-radius: 24px;
     border-radius: 24px;
     background-color: transparent;
+    cursor: pointer;
     border: 1px solid #3f4557;
     padding: 11px 30px 13px 30px;
     font-size: 16px;
@@ -2281,3 +2276,132 @@ footer {
 }
 
 /*-- /Animation --*/
+
+/*-- Popup --*/
+
+body.fixed {
+    width: 100%;
+    padding-right: 20px;
+    overflow: hidden;
+}
+
+.popup {
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    padding: 0 10px;
+}
+
+.popup_bg {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 74, 158, .9);
+    z-index: 3;
+}
+
+.close_popup {
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: transparent;
+    background-image: url(img/close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.popup_content {
+    max-width: 600px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 50px auto 20px auto;
+    padding: 50px 20px 10px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.popup_content .close_popup {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.popup_content h2 {
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.popup_form_wrapp {
+    padding-top: 20px;
+}
+
+.popup_form_wrapp .input_wrapp {
+    margin: 10px 0;
+}
+
+.input_wrapp input {
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding: 0 30px;
+    border: 1px solid #ededed;
+    background-color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 59px;
+    font-weight: normal;
+    color: #757c85;
+}
+
+.input_wrapp_2 {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.input_wrapp_2 > div:nth-child(1) {
+    width: 155px;
+    padding: 10px 5px 10px 0;
+}
+
+.input_wrapp_2 > div:nth-child(2) {
+    width: calc(100% - 155px);
+    padding: 10px 0 10px 5px;
+}
+
+select {
+    display: block;
+    width: 100%;
+    height: 60px;
+    padding: 0 30px;
+    position: relative;
+    border: 1px solid #ededed;
+    background-color: rgb(255, 255, 255);
+    background-image: url(img/arrow.svg);
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    line-height: 59px;
+    font-weight: normal;
+    color: #757c85;
+}
+
+.submit_wrapp {
+    padding: 10px 0;
+    text-align: center;
+}
+
+/*-- /Popup --*/

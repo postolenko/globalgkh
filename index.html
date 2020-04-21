@@ -205,7 +205,7 @@
 								</div>
 							</div>
 							<div class="btn_wrapp animate fadeInUp">
-								<a href="#" class="grey_pill">Узнать подробности</a>
+								<a href="#" class="grey_pill" data-popup-link = "popup_1">Узнать подробности</a>
 							</div>
 						</div>
 					</div>
@@ -1043,12 +1043,56 @@
 
 	<!-- /Footer -->
 
+	<!-- Popups -->
+
+	<div class="popup popup_sect" data-popup = "popup_1">		
+		<!-- <div class="row"> -->
+
+			<div class="popup_content">
+				<button type="button" class="close_popup"></button>
+				<div class="h2_wrapp">
+					<h2>Закажите <span class="orange">бесплатную</span> демонстрацию прямо сейчас </h2>
+					<p>Напишите контактный номер телефона. Наш консультант свяжется с вами, подробно расскажет о возможностях сервиса и ответит на ваши вопросы.</p>
+				</div>
+				<div class="popup_form_wrapp">
+					<div class="input_wrapp">
+						<input type="text" placeholder="Ваше имя" name="name" />
+					</div>
+					<div class="input_wrapp">
+						<input type="tel" placeholder="Ваш телефон" name="tel" />
+					</div>
+					<div class="input_wrapp_2">
+						<div>
+							<p>Когда вам удобно позвонить</p>
+						</div>
+						<div>
+							<select>
+								<option>В любое удобное время</option>
+								<option>с 9 до 12</option>
+								<option>с 12 до 15</option>
+								<option>с 15 до 18</option>
+							</select>
+						</div>						
+					</div>
+					<div class="submit_wrapp">
+						<button type="submit" class="blue_pill">Отправить</button>
+					</div>
+				</div>
+			</div>
+		<!-- </div> -->
 	</div>
+	<!-- /Popups -->
+
+	</div>
+	
 
 	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<script src="vendors/js/jquery.js"></script>
+	<script src="vendors/js/telmask.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoGWEyUlxHOSfMgm2TliQLggP3mej7d_I&callback=initMap" async defer></script>
+
+	<div class="popup_bg"></div>
 
 </body>
 </html>

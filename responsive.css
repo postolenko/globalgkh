@@ -581,6 +581,20 @@ h1 {
 }
 
 /*-- /Footer --*/
+
+/*-- Popups --*/
+
+.input_wrapp_2 {
+	display: block;
+}
+
+.input_wrapp_2 > div:nth-child(1),
+.input_wrapp_2 > div:nth-child(2) {
+    width: 100%;
+    padding: 10px 0;
+}
+
+/*-- /Popups --*/
 	
 }
 
