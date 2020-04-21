@@ -527,6 +527,11 @@ textarea:focus {
     color: #2f3236;
 }
 
+.tel_link_resp {
+    display: none;
+    font-size: 15px;
+    line-height: 15px;
+}
 
 /* ----- Responsive Menu Button ------ */
 
@@ -624,7 +629,13 @@ textarea:focus {
 
 .resp_menu {
     display: none;
+    overflow-y: auto;
     padding: 10px 0 0 0;
+    border-top: 1px solid #ededed;
+}
+
+.resp_nav {
+    display: none;
 }
 
 .resp_menu_cols {

@@ -12,7 +12,12 @@ function getAnimation() {
   });
 }
 
-
+function getRespNavHeight() {
+   var respNavHeight =  $(window).height() - $(".header_site").height();
+   $("#resp_nav").css({
+    "max-height" : respNavHeight + "px"
+   });
+}
 
 $(window).load(function() {
 
@@ -20,30 +25,36 @@ $(window).load(function() {
 });
 
 $(window).resize(function() {
-
-bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
-getAnimation();
-$(".wrapper").css({
-  "padding-top" : $(".header_site_wrapp").height() + "px"
-});
+  bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
+  getAnimation();
+  if($("#resp_nav").is(":hidden")) {
+    $(".wrapper").css({
+      "padding-top" : $(".header_site_wrapp").height() + "px"
+    });
+  }
+  if($("#resp_nav").is(":visible")) {
+    getRespNavHeight();
+  }
 });
 
 $(document).scroll(function() {
-getAnimation();
-
+  getAnimation();
 });
 
 $(document).ready(function() {
-$(".wrapper").css({
-  "padding-top" : $(".header_site_wrapp").height() + "px"
-});
-getAnimation();
+  if($("#resp_nav").is(":hidden")) {
+    $(".wrapper").css({
+      "padding-top" : $(".header_site_wrapp").height() + "px"
+    });
+  }
+  getAnimation();
   // ----------
   $(".respmenubtn").click(function(e) {
       e.preventDefault();
       if( $("#resp_nav").is(":hidden") ) {
           $("#resp_nav").slideDown(300);
           $(this).addClass("active");
+          getRespNavHeight();
       } else {
           $("#resp_nav").slideUp(300);
           $(this).removeClass("active");

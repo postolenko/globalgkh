@@ -8,6 +8,18 @@
 
 @media only screen and (max-width: 1240px) {
 
+/*-- Header --*/
+
+.header_site .col_2 {
+    padding: 0 10px;
+}
+
+.main_nav li {
+    padding: 0 20px;
+}
+
+/*-- .Header --*/
+
 /*-- Section 4 --*/
 
 .sect_4 {
@@ -131,6 +143,25 @@
 
 @media only screen and (max-width: 1024px) {
 
+	/*-- Header --*/
+
+	.resp_nav {
+	    display: flex;
+	    justify-content: center;
+	    -webkit-justify-content: center;
+	}
+
+	.header_site .col_2 {
+		display: none;
+	}
+
+	.header_site .col_3 {
+	    width: calc(100% - 220px);
+	    text-align: right;
+	}
+
+	/*-- /Header --*/
+
 	/*-- Section 1 --*/
 
 	.promo_content::before {
@@ -152,10 +183,27 @@
 
 	/*-- /Section 3 --*/
 
-
 }
 
 @media only screen and (max-width: 900px) {
+
+	/*-- Header --*/
+
+	.link_wrapp {
+	    width: 50%;
+	}
+
+	.link_wrapp a span.title {
+	    font-size: 17px;
+	    line-height: 21px;
+	}
+
+	.link_wrapp a span {
+	    font-size: 15px;
+	    line-height: 20px;
+	}
+
+	/*-- /Header --*/
 
 	/*-- Section 2 --*/
 
@@ -326,6 +374,70 @@
 
 @media only screen and (max-width: 600px) {
 
+	/*-- Header --*/
+
+	.header_site_wrapp {
+		padding-bottom: 10px;
+	}
+
+	.logo {
+	    margin: 12px 0;
+	}
+
+	.logo p {
+		display: none;
+	}
+
+	.tel_link_resp {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.tel_wrapp {
+		display: none;
+	}
+
+	.header_site .col_1 {
+	    width: calc(100% - 100px);
+	}
+
+	.header_site .col_3 {
+	    width: 100px;
+	}
+
+	.header_site .col_3 .respmenubtn {
+	    top: 8px;
+	}
+
+	.resp_nav {
+	    display: block;
+	}
+
+	.resp_nav li {
+		padding: 10px 0;
+	}
+
+	.resp_nav li a {
+	    min-height: auto;
+	    padding: 0 5px 8px 5px;
+	}
+
+	.resp_nav li a::before {
+		top: auto;
+	    bottom: 0;
+	}
+
+	.resp_menu_cols {
+		margin: 10px 0 20px 0;
+	}
+
+	.link_wrapp {
+	    width: 100%;
+	    padding: 10px 0;
+	}
+
+	/*-- /Header --*/
+
 	/*-- Section 1 --*/
 
 	.promo_thumbnails {
@@ -344,7 +456,6 @@
 	/*-- /Section 1 --*/
 
 }
-
 
 @media only screen and (max-width: 480px) {
 
