@@ -721,8 +721,8 @@ textarea:focus {
 /*-- Section 1 --*/
 
 .promo_sect {
-    /*background-image: url(img/promo_bg.jpg);*/
-    background-image: url(img/01.jpg);
+    background-image: url(img/promo_bg.jpg);
+    /*background-image: url(img/01.jpg);*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -733,7 +733,7 @@ textarea:focus {
 .promo_content {
     /*max-width: 710px;*/
     max-width: 600px;
-    padding: 160px 0 113px 0;
+    padding: 79px 0 113px 0;
     position: relative;
 }
 

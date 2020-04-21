@@ -12,6 +12,8 @@ function getAnimation() {
   });
 }
 
+
+
 $(window).load(function() {
 
 
@@ -21,6 +23,9 @@ $(window).resize(function() {
 
 bodyWidth = w.innerWidth || e.clientWidth || g.clientWidth;
 getAnimation();
+$(".wrapper").css({
+  "padding-top" : $(".header_site_wrapp").height() + "px"
+});
 });
 
 $(document).scroll(function() {
@@ -29,6 +34,9 @@ getAnimation();
 });
 
 $(document).ready(function() {
+$(".wrapper").css({
+  "padding-top" : $(".header_site_wrapp").height() + "px"
+});
 getAnimation();
   // ----------
   $(".respmenubtn").click(function(e) {
