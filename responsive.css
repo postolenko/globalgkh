@@ -542,6 +542,14 @@
 
 	/*-- Section 7 --*/
 
+	/*-- Footer --*/
+
+	.footer_section {
+	    background-image: url(img/footer_bg_resp.jpg);
+	}
+
+	/*-- /Footer --*/
+
 }
 
 @media only screen and (max-width: 480px) {
