@@ -1788,7 +1788,7 @@ textarea:focus {
     color: #fff;
 }
 
-.mCSB_buttonLeft {
+/*.mCSB_buttonLeft {
     display: block;
     position: relative;
     width: 16px !important;
@@ -1847,7 +1847,7 @@ textarea:focus {
     background-size: contain;
     background-position: center;
     background-image: url(img/back.svg);
-}
+}*/
 
 .info_box {
     max-width: 1100px;
