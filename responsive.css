@@ -509,6 +509,11 @@
 
 	/*-- Section 7 --*/
 
+	.cell_title h3 {
+	    font-size: 11px;
+	    line-height: 16px;
+	}
+
 	.cell p {
 	    font-size: 14px;
 	    line-height: 23px;
