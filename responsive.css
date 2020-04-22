@@ -573,10 +573,22 @@ h1 {
     padding: 0 15px;
 }
 
+.grey_pill {
+    padding: 18px 20px 17px 20px;
+    font-size: 17px;
+    line-height: 25px;
+}
+
 .blue_pill {
     min-width: 100%;
     padding: 18px 20px 17px 20px;
     font-size: 17px;
+}
+
+.transparent_pill {
+    min-width: 100%;
+    padding: 17px 20px 16px 20px;
+    font-size: 16px;
 }
 
 /*-- Section 2 --*/
