@@ -543,6 +543,12 @@ h1 {
     padding: 0 15px;
 }
 
+.blue_pill {
+    min-width: 100%;
+    padding: 18px 20px 17px 20px;
+    font-size: 17px;
+}
+
 /*-- Section 2 --*/
 
 .thumb_1_descript ul li {
