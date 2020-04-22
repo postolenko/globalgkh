@@ -20,12 +20,12 @@ function getRespNavHeight() {
 }
 
 $(window).load(function() {
-  $(".scroll_x").mCustomScrollbar({
-    axis:"x",
-    scrollButtons:{
-        enable:true
-    }
-  });
+  // $(".scroll_x").mCustomScrollbar({
+  //   axis:"x",
+  //   scrollButtons:{
+  //       enable:true
+  //   }
+  // });
 });
 
 $(window).resize(function() {

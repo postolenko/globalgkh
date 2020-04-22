@@ -521,9 +521,13 @@
 
 	/*-- Section 7 --*/
 
+	.cell_title {
+	    padding: 12px 3px 15px 3px;
+	}
+
 	.cell_title h3 {
-	    font-size: 11px;
-	    line-height: 16px;
+	     font-size: 9px;
+    	line-height: 16px;
 	}
 
 	.cell p {
@@ -532,12 +536,18 @@
 	}
 
 	.btns_row .transparent_pill_2 {
-		width: 96%;
-		padding: 11px 10px 12px 10px;
-		font-size: 10px;
+	    width: 100%;
+	    padding: 11px 10px 12px 10px;
+	    font-size: 10px;
 	    line-height: 15px;
 	    text-transform: uppercase;
 	    font-weight: bold;
+	    -webkit-transform: rotate(90deg);
+	    -moz-transform: rotate(90deg);
+	    transform: rotate(90deg);
+	    min-width: 96px;
+	    position: relative;
+	    top: 18px;
 	}
 
 	/*-- Section 7 --*/
@@ -717,18 +727,6 @@ h1 {
 }
 
 /*-- /Section 6 --*/
-
-/*-- Section 7 --*/
-
-.table {
-	min-width: 410px;
-}
-
-.btns_row {
-	min-width: 410px;
-}
-
-/*-- /Section 7 --*/
 
 }
 
